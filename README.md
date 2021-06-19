@@ -2,19 +2,19 @@
 
 ## 我的配置
 
-|         硬件       |                   型号                  | 
+|         硬件       |                   型号                  |
 |-------------------:|:----------------------------------------|
 |               主板 | HP PRODESK 400G2 DM                       |
-|                CPU | Intel Core i5-6400                      |
+|                CPU | Intel Core i5-6600T                  |
 |               显卡 | Intel HD Graphics 530 1536 MB   |
-|              硬盘1 | 三星 PM961 256G M2 NVMe                 |
-|              硬盘2 | 日立 5400转 500G SATA                |
-|               内存1 | 玖合 DDR4 2666Mhz 16G  |
-|               内存2 | 枭鲸 DDR4 2666Mhz 16G  |
-|        无线 + 蓝牙 | BCM94360HMB 双频 BT4.0 无线网卡 PCI-E   |
-|               键盘 | 海盗船 K70 LUX                               |
-|               鼠标 | 罗技 G304无线                               |
-|            显示器 | 27寸 4K 宏基显示器 H277HK          |
+|              硬盘1 | 西数 SN750 500G M2 NVMe        |
+|              硬盘2 | 东芝 Q200EX 240G SATA     |
+|               内存1 | Crucial DDR4 2666Mhz 8G |
+|               内存2 | Crucial DDR4 2666Mhz 8G |
+|        无线 + 蓝牙 | DW1820A CN-0VW3T3 |
+|               键盘 | 罗技 K375s                          |
+|               鼠标 | 罗技 MX Anywhere 2S                  |
+|            显示器 | Philips 221E 21.5-inch (1920 x 1080) |
 
 
 ## 折腾日志
@@ -79,6 +79,4 @@ Clover 驱动包含：
 
 
 ## 系统截图
-![avatar](https://github.com/ylen0l/Hackintosh-Hp-Prodesk-400g2-DM-Clover-Efi/blob/master/%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E6%88%AA%E5%9B%BE/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%9C%BA20200530%E5%AE%9E%E6%B5%8B15.5%402x.png)关于本机
-
-加图片打开太慢了，就留了关于本机，其他截图去`系统状态截图`里面打开看吧
+未更新系统截图

@@ -151,7 +151,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Arguments</key>
-		<string>-lilubetaall igfxonln=1 </string>
+		<string>-lilubetaall igfxonln=1 brcmfx-country=#a</string>
 		<key>Log</key>
 		<true/>
 		<key>XMPDetection</key>
@@ -159,7 +159,7 @@
 		<key>Timeout</key>
 		<integer>1</integer>
 		<key>DefaultVolume</key>
-		<string>hp400g2</string>
+		<string>MacOS</string>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -240,6 +240,14 @@
 		<dict>
 			<key>FixOwnership</key>
 			<false/>
+		</dict>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0)</key>
+			<dict>
+				<key>pci-aspm-default</key>
+				<integer>0</integer>
+			</dict>
 		</dict>
 	</dict>
 	<key>DisableDrivers</key>
@@ -380,10 +388,52 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE176</string>
+		<key>Board-ID</key>
+		<string>Mac-B809C3757DA9BB8D</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF7F</string>
+		<key>BoardVersion</key>
+		<string>1.0</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0x09</string>
+		<key>BiosVersion</key>
+		<string>IM171.88Z.F000.B00.2006161817</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisAssetTag</key>
+		<string>iMac-Aluminum</string>
+		<key>PlatformFeature</key>
+		<string>0x00</string>
+		<key>Family</key>
+		<string>iMac17,1</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string></string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
 		<key>ProductName</key>
-		<string>Macmini8,1</string>
+		<string>iMac17,1</string>
+		<key>SmUUID</key>
+		<string></string>
 		<key>Mobile</key>
 		<false/>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>EfiVersion</key>
+		<string>428.0.0.0.0</string>
+		<key>SerialNumber</key>
+		<string></string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>BiosReleaseDate</key>
+		<string>06/16/2020</string>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
