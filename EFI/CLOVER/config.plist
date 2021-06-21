@@ -30,7 +30,7 @@
 					<key>Replace</key>
 					<data>SERFRg==</data>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Comment</key>
 					<string>Rename HDAS to HDEF</string>
 				</dict>
@@ -102,7 +102,7 @@
 				<key>FixDisplay</key>
 				<false/>
 				<key>FixHDA</key>
-				<true/>
+				<false/>
 				<key>FixRTC</key>
 				<true/>
 				<key>AddDTGP</key>
@@ -151,7 +151,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Arguments</key>
-		<string>-lilubetaall igfxonln=1 brcmfx-country=#a</string>
+		<string>-lilubetaall igfxonln=1 brcmfx-country=#a alcid=88</string>
 		<key>Log</key>
 		<true/>
 		<key>XMPDetection</key>
@@ -234,7 +234,7 @@
 			<key>AFGLowPowerState</key>
 			<false/>
 			<key>Inject</key>
-			<integer>15</integer>
+			<string>No</string>
 		</dict>
 		<key>USB</key>
 		<dict>

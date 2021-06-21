@@ -1,0 +1,20 @@
+92:485  0:051  HdaCodecDump Start
+92:485  0:000  Codec: Intel Skylake HDMI
+92:485  0:000  Address: 2
+92:485  0:000  AFG Function Id: 0x1 (unsol 0)
+92:485  0:000  Vendor ID: 0x80862809
+92:485  0:000  Revision ID: 0x00100000
+92:485  0:000  Default PCM: N/A
+92:485  0:000  Default Amp-In caps: N/A
+92:485  0:000  Default Amp-Out caps: N/A
+92:485  0:000  Node 0x02 [Audio Output] wcaps 0x00006611: Stereo Digital
+92:485  0:000  Node 0x03 [Pin Complex] wcaps 0x0040778D: Stereo Digital Amp-Out
+92:485  0:000    Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=00, mute=1
+92:485  0:000    Amp-Out vals: [0x00 0x00]
+92:485  0:000    Pincap 0x09000094: OUT Detect HBR HDMI DP
+92:485  0:000    Pin Default 0x18560010: [Jack] Digital Out at Int Special
+92:485  0:000      Conn = Digital, Color = Unknown
+92:485  0:000      DefAssociation = 0x1, Sequence = 0x0
+92:485  0:000    Pin-ctls: 0x00:
+92:485  0:000    Connection: 1
+92:485  0:000       0x02

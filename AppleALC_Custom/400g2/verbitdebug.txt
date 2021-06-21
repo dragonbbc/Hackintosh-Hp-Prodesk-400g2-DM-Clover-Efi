@@ -1,0 +1,60 @@
+Blacklist:
+411111f0 400000f0 CD at Int ATAPI
+Removed Nodes: 0x14 0x18 0x19 0x1b 0x1e 
+Checking 71c Associations
+
+Current Associations
+ 01271c00 = 1  note: Changed 0 to 1
+ 01771c10 = 1 
+ 01a71c30 = 3 
+ 01d71c01 = 1  note: Changed 0 to 1
+ 02171c20 = 2 
+
+  Used associations = 1 1 3 1 2
+Unused associations = 4 5 6 7 8 9 a b c d e
+
+Correcting duplicate associations
+
+Checking if 1 already exists in: 1 3 1 2 
+   duplicate found - Is this the first time we've seen this association?
+   yes - ignoring
+Checking if 1 already exists in: 1 3 1 2 
+   duplicate found - Is this the first time we've seen this association?
+   no - replacing association with: 4
+Checking if 3 already exists in: 1 4 1 2 
+   no duplicate found
+Checking if 1 already exists in: 1 4 3 2 
+   duplicate found - Is this the first time we've seen this association?
+   no - replacing association with: 5
+Checking if 2 already exists in: 1 4 3 5 
+   no duplicate found
+
+New 71c Associations
+ Before      After
+--------------------------------------------------
+01271c00   01271c00  01271d00  01271e00  01271f40
+01771c10   01771c40  01771d01  01771e17  01771f90
+01a71c30   01a71c30  01a71d10  01a71ea1  01a71f02
+01d71c01   01d71c50  01d71d00  01d71e50  01d71f40
+02171c20   02171c20  02171d10  02171e21  02171f02
+
+Reset 71d Misc to 0
+New 71d Associations
+ Before                After
+--------------------------------------------------
+01271d00   01271c00  01271d00  01271e00  01271f40
+01771d01   01771c40  01771d00  01771e17  01771f90
+01a71d10   01a71c30  01a71d10  01a71ea1  01a71f02
+01d71d00   01d71c50  01d71d00  01d71e50  01d71f40
+02171d10   02171c20  02171d10  02171e21  02171f02
+
+Correct 71f 02 FP to 01
+New 71f Associations
+ Before                                    After
+--------------------------------------------------
+01271d00   01271c00  01271d00  01271e00  01271f40
+01771d01   01771c40  01771d00  01771e17  01771f90
+01a71d10   01a71c30  01a71d10  01a71ea1  01a71f01
+01d71d00   01d71c50  01d71d00  01d71e50  01d71f40
+02171d10   02171c20  02171d10  02171e21  02171f01
+ 
