@@ -11,7 +11,7 @@
 |              硬盘2 | 东芝 Q200EX 240G SATA     |
 |               内存1 | Crucial DDR4 2666Mhz 8G |
 |               内存2 | Crucial DDR4 2666Mhz 8G |
-|        无线 + 蓝牙 | DW1820A CN-0VW3T3 |
+|        无线 + 蓝牙 | BCM94360CS2 |
 |               键盘 | 罗技 K375s                          |
 |               鼠标 | 罗技 MX Anywhere 2S                  |
 |            显示器 | Philips 221E 21.5-inch (1920 x 1080) |
@@ -19,9 +19,19 @@
 
 ## 折腾日志
 
-2020年6月10日：经网友测试， `Mac mini8,1` 机型可能会在启动输入密码界面掉帧，更换` iMac17,1` 即正常， 如遇到此问题可尝试更改。
+2021年2月9日：升级WhateverGreen，根据官方文档，删除Clover配置文件中不必要的配置
 
-2020年5月30日：测试更新15.5，无痛升级。更新关于本机截图。
+2021年1月21日：重新修改声卡驱动，使麦克风真正可用，尝试自己定制USB
+
+2021年12月8日：根据AppleALC官方文档，删除Clover配置文件中不必要的配置
+
+2020年12月5日：Clover升级到5123.1，替换无线网卡为BCM94360CS2，尝试为AppleALC增加专用的layout-id，使麦克风可以用起来
+
+2020年11月6日：Clover升级到5122版，并升级驱动到最新版
+
+2020年10月29日：修改机型为iMac17,1，安装DW1820A无线网卡，发现5G连接一会就掉速到7Mbps，后来证实为5G频道问题，更换频道后OK
+
+2020年10月17日：使用ylen0l的EFI文件安装Catalina 10.15.7，后替换为老白完美4K后的配置文件
 
 ## 更新注意事项
 
@@ -30,53 +40,48 @@
 
 ## EFI 简介
 
-感谢黑苹果星球会员交流群`@ycvip521`在我安装无果即将自闭之时提供了可安装版本的EFI，此EFI根据原EFI修改而来。
+根据老白的视频，找到了ylen0l的github项目地址，在此基础上将Clover及驱动更新了一下，并定制了声卡驱动，使麦克风可用。
 
 
-这个 EFI 的特点是使用的是 `Mac mini8,1` 机型，双硬解正常，因已做了 USB 定制，所有 USB 接口都可用。
+这个 EFI 的特点是使用的是 `iMac17,1` 机型，双硬解正常，因已做了 USB 定制，所有 USB 接口都可用。
 
-缺点：
+未解决：
 
-1、使用`VoodooHDA-2.9.2.kext`音量小；使用`AppleALC.kext`自带小喇叭无声。按需食用
+1、睡眠问题
 
-2、关于睡眠：其表现为可手动/自动睡眠，但唤醒后黑屏。建议禁用睡眠
+2、VGA接口不可用
 
 
 
-Clover 版本为：5107。
+Clover 版本为：5123.1。
 
 Clover 驱动包含：
 
 * ApfsDriverLoader.efi
+* AudioDxe.efi
 * CsmVideoDxe.efi
 * DataHubDxe.efi
-* EmuVariableUefi.efi
 * FSInject.efi
 * HFSPlus.efi
-* SMCHelper.efi
+* OcQuirks.efi
+* OpenRuntime.efi
 
 系统驱动包含：
 
-* ACPIBatteryManager.kext
-* AirportBrcmFixup.kext
-* AppleALC.kext
-* BrcmBluetoothInjector.kext
-* HibernationFixup.kext
 * Lilu.kext
-* RealtekRTL8111.kext
-* RTCMemoryFixup.kext
-* USBPorts.kext
+* AppleALC.kext
 * WhateverGreen.kext
-* FakeSMC.kext
-* FakeSMC_SMMSensors.kext
-* FakeSMC_LPCSensors.kext
-* FakeSMC_GPUSensors.kext
-* FakeSMC_CPUSensors.kext
-* FakeSMC_ACPISensors.kext
+* HibernationFixup.kext
+* RTCMemoryFixup.kext
+* RealtekRTL8111.kext
+* USBPorts.kext
+* VirtualSMC.kext
+* SMCProcessor.kext
+* SMCSuperIO.kext
 ## EFI 使用
 
-如果你的配置跟我上面配置相同或兼容，那么你可以直接使用该 EFI 进行安装。安装前请注意，一定要用 `Clover Configurator` 重新生成并替换 `SMBIOS` 部分的内容，否则会因为机器有同一个硬件 ID 而被苹果封锁。生成时，请选择 `Mac mini8,1` 机型。
+如果你的配置跟我上面配置相同或兼容，那么你可以直接使用该 EFI 进行安装。安装前请注意，一定要用 `Clover Configurator` 重新生成并替换 `SMBIOS` 部分的内容，否则会因为机器有同一个硬件 ID 而被苹果封锁。生成时，请选择 `iMac17,1` 机型。
 
 
 ## 系统截图
-未更新系统截图
+懒得截图了

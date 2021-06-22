@@ -91,7 +91,7 @@
 		</dict>
 		<key>SortedOrder</key>
 		<array>
-			<string>SSDT-EC.aml</string>
+			<string>SSDT-EC-USBX.aml</string>
 			<string>SSDT-PLUG.aml</string>
 			<string>SSDT-PMC.aml</string>
 		</array>
@@ -122,7 +122,7 @@
 	<key>BootGraphics</key>
 	<dict>
 		<key>UIScale</key>
-		<integer>2</integer>
+		<integer>1</integer>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -142,7 +142,7 @@
 			<key>IMEI</key>
 			<string>0x0</string>
 			<key>IntelGFX</key>
-			<string>0x19128086</string>
+			<string>0x0</string>
 			<key>LAN</key>
 			<string>0x0</string>
 			<key>NVidia</key>
@@ -156,14 +156,6 @@
 		</dict>
 		<key>Inject</key>
 		<false/>
-		<key>Properties</key>
-		<dict>
-			<key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0)</key>
-			<dict>
-				<key>pci-aspm-default</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
 		<key>USB</key>
 		<dict>
 			<key>FixOwnership</key>
@@ -224,12 +216,10 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0x19260002</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
